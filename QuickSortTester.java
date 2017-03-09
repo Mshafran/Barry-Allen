@@ -67,7 +67,7 @@ public class QuickSortTester
 		long elapsedTime = System.currentTimeMillis() - startTime;
 		*/
 	    
-		System.out.print( "Runtime merge " + (times+1) + " : " );
+		System.out.print( "Runtime Quick Sort " + (times+1) + " : " );
 		System.out.println( elapsedTime );
 		sum += elapsedTime;
 	    }
