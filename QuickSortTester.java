@@ -1,15 +1,21 @@
+// Team Barry-Allen -- Ryan Siu, Edwin Mok, Mark Shafran
+// APCS2 pd5
+// Lab 01 -- What Does the Data Say?
+// 2017-03-09
+
 /*======================================
   class QuickjortTester
 
   TIMING MECHANISM:
-    
-
-  BIG-OH CLASSIFICATION OF ALGORITHM:
-
-
-  ANALYSIS:
-
-  
+  Our timing mechanism works by going through an array of specificed n-values,
+    recording the average time of the sorts on randomly-generated arrays of 
+    each n-value, and printing the n-values and their corresponding times in a 
+    neat format once all the sorts are finished. We used a batch size of 100 in
+    order to ensure that outliers don't affect the time of the sort, and we 
+    made sure to eliminate as much "noise" from the results as possible by only
+    measuring the time it takes to run the qsort method. Additionally, the O(n)
+    and O(n^2) methods that were written for reference simply perform O(1) 
+    operations on randomly-generated arrays n and n^2 times, correspondingly.
   ======================================*/
 
 public class QuickSortTester 
