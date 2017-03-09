@@ -17,7 +17,7 @@ Our timing mechanism works by going through an array of specificed n-values, rec
 
 The best case runtime is O(nlogn), which is when the chosen pivot value is always swapped to the middle of the (sub)array.
 
-The average case runtime is also O(nlogn), because **ADD STUFF**
+The average case runtime is also O(nlogn), because assuming that the pivot value is not swapped to the two extremes or the middle, which means that it would be somewhere in between the extremes and the middle. In that case, we do not have to swap it n^2 times, since that is the runtime for the worst case scenario, and the average runtime would lie somewhere in between nlogn and n^2. Mathematically speaking, the runtime for the best case scenario would be n * log base 2 of n, since the pivot position would split the array into 2 subarrays of half the length, but since the average case does not always account for the best case scenario, the average case runtime would be n * log of some other base smaller than 2 of n, therefore would result in more splits in order to sort the array, but not as extreme as the worst case scenario, therefore it is still O(nlogn) runtime even if the base for logn is different. 
 
 However, the worst case scenario is O(n^2), which is when the chosen pivot value is always swapped to the two extremes of the (sub)array.
 
