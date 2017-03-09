@@ -12,7 +12,7 @@
   
   ======================================*/
 
-public class MergeSortTester 
+public class QuickSortTester 
 {
     
     public static final int[] NUMS = {1,10,100,1000,5000,10000,50000,100000,500000,1000000,2500000,5000000,7500000,10000000};
