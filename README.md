@@ -11,7 +11,9 @@ The partition method takes an input pivot index, which contains the pivot value.
 Our timing mechanism works by going through an array of specificed n-values, recording the average time of the sorts on randomly-generated arrays of each n-value, and printing the n-values and their corresponding times in a neat format once all the sorts are finished. We used a batch size of 100 in order to ensure that outliers don't affect the time of the sort, and we made sure to eliminate as much "noise" from the results as possible by only measuring the time it takes to run the ```qsort``` method. Additionally, the O(n) and O(n^2) methods that were written for reference simply perform O(1) operations on randomly-generated arrays n and n^2 times, correspondingly.
 
 ##**Pivot Arrangement and Data Arrangement**
-(maybe move the explanations for Big O Classification here)
+If the pivot arrangements always get swapped to the middle of the (sub)array, then it would result in the best case scenario, with a runtime of n * log base 2 of n because the pivots would always split the (sub)array in half. If the pivot arrangements always get swapped to either the very front or the very back of the (sub)array, it would result in the worst case scenario and a runtime of n^2, because you have to split it n times to ensure that the (sub)array is sorted. Other arrangements would result in a runtime of n * log (of some base less than 2) of n on average. 
+
+If the array is already sorted from smallest to largest, then it would also result in the best case scenario because the pivot value would not have to move anywhere. 
 
 ##**Big O Classification (abstract)**
 
